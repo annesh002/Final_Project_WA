@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    color: var(--dark);
+}
+
+.container {
+    max-width: 1130px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px 0;
+    background: #ffffff;
+}
+
+.navbar-brand img {
+    width: 160px;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #212528;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #759c05;
+}
+
+.nav-link.active-link {
+    color: #759c05 !important;
+    font-weight: 600;
+}
+
+.nav-link.active-link::after {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 3px;
+    background: #759c05;
+    margin: 3px auto 0;
+    border-radius: 10px;
+}
+
+.btn-outline-success {
+    border: 2px solid #759c05;
+    color: #759c05;
+    font-weight: 600;
+}
+
+.btn-outline-success:hover {
+    background-color: #759c05;
+    color: #fff;
+}
+
+.btn-success {
+    background-color: #759c05;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #577101;
+}
+.page-title {
+    padding: 60px 0 0;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+.green-text {
+    color: #759c05;
+}
+/* ✅ FAQ PAGE */
+.faq-page {
+  background: #fff;
+}
+
+.faq-main-title {
+  font-size: 32px;
+  color: #111;
+}
+
+.faq .underline,
+.faq-page .underline {
+  width: 60px;
+  height: 4px;
+  background: #ebca07;
+  margin: 10px auto;
+  border-radius: 4px;
+}
+
+.accordion-item {
+  background: #f9f9f9;
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+.accordion-button {
+  background: transparent;
+    color: #222;
+    font-weight: 600;
+    box-shadow: none !important;
+    border: none;
+    padding: 18px 20px;
+}
+.accordion-button::after {
+  content: '+';
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+    background-image: none !important;
+    transform: none !important;
+}
+.accordion-button:not(.collapsed)::after {
+    content: '-';
+    transform: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-body {
+  color: #555;
+    padding: 15px 25px 25px;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* ================== CTA SECTION PERFECT MATCH ================== */
+.cta-section {
+    background-image: url("../images/bg_lorem.png");      
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    padding: 70px 80px;
+    margin: 80px auto;
+    color: #fff;
+    position: relative;
+}
+
+.cta-section .container {
+    max-width: 1130px;
+}
+
+.cta-content h2 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    max-width: 450px;
+}
+
+.cta-p {
+    max-width: 420px;
+    font-size: 15px;
+    color: #e8e8e8;
+}
+
+.cta-tag {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffe969;
+    margin-bottom: 10px;
+}
+
+.cta-btn {
+    background: #EBCA07;
+    color: white;
+    font-weight: 600;
+    padding: 14px 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #e0bc00;
+    color: black;
+}
+.footer {
+    background-color: #fff;
+    color: #212529;
+}
+
+.footer-title {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: #232729;
+}
+
+.footer-inline-links li {
+    margin-right: 16px;
+}
+
+.footer-link {
+    color: #052731;
+    font-size: 13px;
+    font-family: 'Roboto Flex', sans-serif;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #709303;
+}
+.footer-link.active-link{
+    color: #759c05 !important;
+    font-weight: 600;
+}
+.footer-link.active-link::after {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 3px;
+    background: #759c05;
+    margin: 3px auto 0;
+    border-radius: 10px;
+}
+
+.social-icon {
+    color: #709303;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #5a7a02;
+}
+
+.copyright {
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+    color: #212528;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .cta-section {
+        padding: 60px 50px;
+    }
+
+    .cta-section .container {
+        display: flex;
+        flex-wrap: wrap;       
+        gap: 25px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cta-content {
+        width: 100%;        
+    }
+
+    .cta-content h2,
+    .cta-p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cta-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .cta-section {
+        padding: 40px 22px;    
+    }
+
+    .cta-section .container {
+        display: flex;
+        flex-direction: column;   
+        align-items: center;     
+        justify-content: center;
+        flex-wrap: nowrap;       
+        text-align: center;
+        gap: 22px;
+        width: 100%;
+    }
+
+    .cta-content {
+        width: 100%;             
+        max-width: 100%;
+    }
+
+    .cta-btn {
+        width: auto;             
+        min-width: 180px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .cta-section {
+        padding: 35px 22px;
+    }
+
+    .cta-btn {
+        width: 100%;            
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .cta-section {
+        padding: 28px 18px;
+        border-radius: 14px;
+    }
+
+    .cta-btn {
+        width: 100%;
+    }
+}
+
