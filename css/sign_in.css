@@ -1,0 +1,131 @@
+/* ----------------------------------
+   FONT
+---------------------------------- */
+body {
+    font-family: "Outfit", sans-serif;
+    background: #ffffff;
+}
+
+/* ----------------------------------
+   LAYOUT
+---------------------------------- */
+.auth-wrapper {
+    height: 100vh;
+    display: flex;
+    padding: 0;
+}
+
+.auth-left {
+    width: 50%;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.auth-logo {
+    width: 150px;
+    margin-bottom: 25px;
+}
+
+/* ----------------------------------
+   TEXT
+---------------------------------- */
+.auth-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.auth-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8C8C8C;
+    margin-bottom: 24px;
+}
+
+.auth-label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ----------------------------------
+   INPUTS
+---------------------------------- */
+.auth-input {
+    height: 48px;
+    border-radius: 10px;
+    border: 1px solid #E4E4E4;
+    font-size: 14px;
+    padding-left: 12px;
+}
+
+.auth-remember-label {
+    font-size: 14px;
+}
+
+
+.auth-forgot {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6f9900;
+    text-decoration: none;
+}
+
+/* ----------------------------------
+   BUTTON
+---------------------------------- */
+.auth-btn {
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    border: none;
+    background: #719302;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Bottom link */
+.auth-bottom-text {
+    font-size: 14px;
+}
+
+.auth-bottom-text a {
+    font-weight: 600;
+    color: #719302;
+    text-decoration: none;
+}
+
+/* ----------------------------------
+   RIGHT IMAGE PANEL
+---------------------------------- */
+.auth-image {
+    width: 50%;
+    background-image: url("../images/auth-bg.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 35px;
+    margin: 5px 0;
+}
+
+/* ----------------------------------
+   RESPONSIVE
+---------------------------------- */
+@media (max-width: 991px) {
+    .auth-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .auth-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .auth-left {
+        width: 100%;
+        padding: 20px;
+    }
+}

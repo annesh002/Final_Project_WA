@@ -1,0 +1,133 @@
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.auth-wrapper {
+  min-height: 100vh;
+}
+
+.auth-left {
+  flex: 1;
+  padding: 60px 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;   
+  text-align: center;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 460px;
+  align-items: center;
+}
+
+.auth-logo {
+  width: 160px;
+  margin-bottom: 20px;
+}
+
+.auth-title {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.auth-subtitle {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+/* Form */
+.auth-input {
+  height: 52px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+.auth-input:focus {
+  border-color: #7aa300;
+  box-shadow: none;
+}
+.auth-container form,
+.auth-container form .auth-input,
+.auth-container form .row {
+  width: 100%;
+  text-align: left;           
+}
+/* Country dropdown styling */
+.country-dropdown .btn {
+  background: #ffffff;
+  border: 1px solid #E4E4E4;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.country-dropdown .dropdown-menu {
+  min-width: 130px;
+}
+
+.flag-icon {
+  width: 20px;
+  height: 14px;
+  margin-right: 6px;
+  border-radius: 2px;
+}
+
+.phone-wrapper {
+  border-radius: 10px;
+}
+
+/* Ensure phone input keeps size */
+.phone-wrapper input {
+  height: 46px;
+}
+
+
+.auth-btn {
+  background-color: #7aa300;
+  color: #fff;
+  height: 52px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.auth-btn:hover {
+  background-color: #648700;
+  color: #fff;
+}
+
+.auth-bottom-text a {
+  color: #7aa300;
+  text-decoration: none;
+}
+
+.auth-bottom-text a:hover {
+  text-decoration: underline;
+}
+
+/* Right Image */
+.auth-image {
+  flex: 1;
+  background: url("../images/auth-bg.png") no-repeat center center/cover;
+  border-radius: 35px ;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .auth-wrapper {
+    flex-direction: column;
+  }
+  .auth-left {
+    padding: 40px 25px;
+  }
+  .auth-image {
+    display: none;
+  }
+}

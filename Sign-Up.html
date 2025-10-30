@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up — Quote Green</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./favicon_io/favicon.ico">
+
+    <link rel="stylesheet" href="./css/sign_up.css">
+</head>
+
+<body>
+    <div class="auth-wrapper d-flex">
+        <!-- Left Side -->
+        <div class="auth-left d-flex align-items-center justify-content-center">
+            <div class="auth-container">
+                <img src="./images/logo.png" alt="Quote Green Logo" class="auth-logo mb-3">
+
+                <h2 class="auth-title">Sign Up With Quote Green</h2>
+                <p class="auth-subtitle mb-4">Enter your details to continue</p>
+
+                <form>
+                    <!-- FIRST NAME -->
+                     <div class="row g-3">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label input-label">First Name *</label>
+                        <input type="text" class="form-control auth-input" placeholder="Enter first name">
+                    </div>
+
+                    <!-- LAST NAME -->
+                    <div class="col-md-6">
+                        <label class="form-label input-label">Last Name *</label>
+                        <input type="text" class="form-control auth-input" placeholder="Enter last name">
+                    </div>
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="mb-3">
+                        <label class="form-label input-label">Email Address *</label>
+                        <input type="email" class="form-control auth-input" placeholder="john.doe@companyname.com">
+                    </div>
+
+                    <!-- PHONE WITH COUNTRY DROPDOWN -->
+                    <div class="mb-3">
+                        <label class="form-label input-label">Phone Number *</label>
+
+                        <div class="d-flex align-items-center phone-wrapper">
+                            <div class="dropdown country-dropdown">
+                                <button class="btn dropdown-toggle d-flex align-items-center" type="button"
+                                    id="countryDropdown" data-bs-toggle="dropdown">
+                                    <img src="./images/usa.png" class="flag-icon" alt="us"> +1
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item d-flex align-items-center"><img src="./images/usa.png"
+                                                class="flag-icon"> +1 USA</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center"><img src="./images/usa.png"
+                                                class="flag-icon"> +91 India</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center"><img src="./images/usa.png"
+                                                class="flag-icon"> +44 UK</a></li>
+                                </ul>
+                            </div>
+
+                            <input type="text" class="form-control ms-2 auth-input" placeholder="000 111 0101">
+                        </div>
+                    </div>
+
+                    <!-- BUSINESS REGISTRATION NUMBER -->
+                    <div class="mb-3">
+                        <label class="form-label input-label">Business Registration Number *</label>
+                        <input type="text" class="form-control auth-input" placeholder="Enter business registration">
+                    </div>
+
+                    <!-- PASSWORD -->
+                    <div class="mb-3">
+                        <label class="form-label input-label">Desired Password *</label>
+                        <input type="password" class="form-control auth-input" placeholder="Enter password">
+                    </div>
+
+                    <!-- CONFIRM PASSWORD -->
+                    <div class="mb-3">
+                        <label class="form-label input-label">Confirm Password *</label>
+                        <input type="password" class="form-control auth-input" placeholder="Confirm password">
+                    </div>
+
+
+                    <div class="form-check mt-3 mb-3">
+                        <input class="form-check-input" type="checkbox" id="termsCheck">
+                        <label class="form-check-label small" for="termsCheck">
+                            By signing up, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy
+                                Policy</a>.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn auth-btn w-100 mb-3">Sign Up</button>
+
+                    <p class="auth-bottom-text text-center">
+                        Already have an account? <a href="./Sign-in.html">Sign In</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Right Side Image -->
+        <div class="auth-image d-none d-md-block"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

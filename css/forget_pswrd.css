@@ -1,0 +1,122 @@
+
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.auth-wrapper {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.auth-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.auth-container {
+    max-width: 430px;
+    width: 100%;
+}
+
+.auth-container img.logo {
+    display: block;
+    width: 180px;
+    margin: 0 auto 30px;
+}
+
+.auth-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    text-align: center;
+    color: #202020;
+}
+
+.auth-subtitle {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #6b6b6b;
+}
+
+/* form inputs */
+.auth-input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    outline: none;
+    padding: 0 16px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* textarea */
+textarea.auth-input {
+    height: 90px;
+    resize: none;
+    padding-top: 12px;
+}
+
+/* Button */
+.auth-btn {
+    width: 100%;
+    background: #799c0b;
+    color: #fff;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 20px 0;
+    transition: 0.3s;
+}
+.auth-btn:hover { background: #6c8b09; }
+
+.auth-bottom-text {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.auth-bottom-text a {
+    color: #799c0b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* IMAGE SIDE */
+.auth-image {
+    margin: 5px 0;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+
+/* ---------------------- RESPONSIVE ---------------------- */
+
+@media(max-width: 991px) {
+    .auth-wrapper {
+        flex-direction: column;
+    }
+    .auth-image {
+        height: 350px;
+        border-radius: 30px;
+    }
+}
+@media(max-width: 480px) {
+    .auth-container {
+        max-width: 100%;
+    }
+    .auth-title {
+        font-size: 22px;
+    }
+}
