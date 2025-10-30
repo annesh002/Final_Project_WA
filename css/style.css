@@ -278,7 +278,7 @@ body {
 .services {
     background: #fff;
     padding: 100px 0;
-    position: relative;
+    /* position: relative; */
 }
 
 .underline {
